@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Motion Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="container slide-in">
+        <h2>Motion Quiz</h2>
+        <form id="motionQuizForm">
+            <ol>
+                <li>What powers the motion actuators?<br>
+                    <input type="radio" name="mq1" value="1"> Hydraulic Power Unit (HPU)<br>
+                    <input type="radio" name="mq1" value="0"> GPU<br>
+                    <input type="radio" name="mq1" value="0"> Pneumatic system<br>
+                    <input type="radio" name="mq1" value="0"> Instructor station<br>
+                </li><br>
+                <li>How many actuators are typically used on a full flight simulator motion base?<br>
+                    <input type="radio" name="mq2" value="0"> 4<br>
+                    <input type="radio" name="mq2" value="1"> 6<br>
+                    <input type="radio" name="mq2" value="0"> 3<br>
+                    <input type="radio" name="mq2" value="0"> 2<br>
+                </li><br>
+                <li>What is the function of the 'Return to Home' battery system?<br>
+                    <input type="radio" name="mq3" value="1"> Safely retract the motion system in a power loss<br>
+                    <input type="radio" name="mq3" value="0"> Provide backup to instructor console<br>
+                    <input type="radio" name="mq3" value="0"> Power the motion cabinet<br>
+                    <input type="radio" name="mq3" value="0"> Activate the sound system<br>
+                </li><br>
+                <li>What does the Moog GUI software allow technicians to do?<br>
+                    <input type="radio" name="mq4" value="0"> Access flight plans<br>
+                    <input type="radio" name="mq4" value="1"> Monitor and control motion system<br>
+                    <input type="radio" name="mq4" value="0"> Adjust seat position<br>
+                    <input type="radio" name="mq4" value="0"> Reboot instructor console<br>
+                </li><br>
+                <li>Which fault type typically indicates an actuator issue?<br>
+                    <input type="radio" name="mq5" value="0"> Audio fault<br>
+                    <input type="radio" name="mq5" value="0"> Lighting fault<br>
+                    <input type="radio" name="mq5" value="1"> Motion base fault<br>
+                    <input type="radio" name="mq5" value="0"> Video sync error<br>
+                </li><br>
+                <li>Motion system should be operated only when:<br>
+                    <input type="radio" name="mq6" value="1"> All personnel are clear<br>
+                    <input type="radio" name="mq6" value="0"> Instructor requests it<br>
+                    <input type="radio" name="mq6" value="0"> Simulator power is on<br>
+                    <input type="radio" name="mq6" value="0"> Visual system is calibrated<br>
+                </li><br>
+            </ol>
+            <button type="button" onclick="submitMotionQuiz()">Next</button>
+        </form>
+    </div>
+</body>
+</html>
